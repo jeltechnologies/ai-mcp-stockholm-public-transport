@@ -31,7 +31,7 @@ For self-host solutions, such as homeservers:
   }
 }
 ```
-- Start the containers with docker compose up
+- Start the containers, `docker compose up`
 - This will start a Spring application in Java as well as MCPO. MCPO is a proxy from MCP to OpenAI API.
 - Open OpenWebUI as administrator, click on the account, choose Admin Panel, Settings, External Tools
 - Click "Add Connection" 
