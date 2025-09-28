@@ -19,9 +19,19 @@ Functions:
 Model Context Protocol (MCP) is the most important enablers of agentic AI. People call it the USB-C port for AI applications. Using MCP AI applications like Claude or ChatGPT can use it enabling them to access key information and perform tasks. 
 I wrote this tool to learn how the Model Context Protocol works to understands it posisiblities and limitations.
 ## What did I learn so far
-It is very easy to get started with MCP in modern tooling like the Spring Framework. It basically works out of the box. The fundamental difficulty with this kind of tools is the non-determenistic behavour of the chatbot. 
-### AI acts like a cat
-In a traditional API, the client will always perform the same requests and use the responses in the same way. It acts binary, like a dogs to their master. Chat bot clients however, act have more a cats. They do as they please. First of all you need to pursuede them to use the tool with crisp descriptions. You also never never really sure how they use the responses you provide. There is random behavior. This will make developing and especially maintaining this tool challenging. I see many simularaties with user experience in software engineering. 
+It is very easy to get started with MCP in modern tooling like the Spring Framework. It basically works out of the box. 
+The fundamental difficulty with this kind of tools is the non-determenistic behavour of the chatbot, and the fact that you need to tailor the API for the chatbot, not for the system.
+### AI acts like a cat, REST APIs are for dogs
+In a traditional API, the client will always perform the same requests and use the responses in the same way. It acts binary, like a dogs to their master. Chat bot clients however, act have more a cats. They do as they please. First of all you need to pursuede them to use the tool with crisp descriptions. You also never never really sure how they use the responses you provide. There is random behavior. 
+### User versus system view
+I also see much simularaties the challenges user experience in industrial software engineering, like telecommunications. 
+- Software engineers have the "system view" because they understand the system from the inside out. They tend to be reluctant to take decisions that limit how the software can be used So build to allow for full flexibility. This may sound great, but it leads to configuration file with a gaziliion of parameters. 
+- Normal users have the "user view", thet just have to perform a task, for example "configure the e-mail system". They want to do it is fast as possible. A tremendous file with all options scares users by this, they do not dare to break to system. And because everything is flexible and possible users get overwhelmed and frustrated.
+The solution here is usability, where you design first the tasks that users need to perform. After this you collect the data the user has to perform the task, which is *not* the data the user needs to provision, that is the system viuew. Finally you design screens / layouts that needs as little clicks, scrolling and entering data as possible. Then you review it with the user. And then, only then you start coding and transform the user-view into the system-view, basically by applying much default system configuration. Starting with a YAML, JSON or XML file is futile.  
+Developing an MCP server and API is the same, forget the data that is available. Build your MCP API for the ChatGTP bot. It acts like human. What tasks does it need to perform? Can we make it easier? This boils down to drastically simplifying the dat from traditional REST interfaces. Tailoring the MCP for the bot by simplifying data took most time. More is less in this perspective.
+## What is my vision on MCP going forward
+MCP is a revolutionary technology for agentic AI. What is needed is an API design around usability for the chatbot. There will be challenges like we encounter in usability. Software engineers are used to deterministic systems, where things are tested. A horrible user interface will pass all these tests with ease, but will be useless in practical reality. Chatbots act randomly "how they feel for it" on what they ask for and how they process the information. Almost like humans!  
+
 
 
 
