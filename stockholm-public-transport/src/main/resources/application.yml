@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: transporttimes
+  jackson:
+    default-property-inclusion: non-empty
+  ai:
+    mcp:
+      server:
+        name: transporttimes
+        version: 1.0.0
+        type: sync
+        stdio: false
+        sse-endpoint: /api/v1/sse
+        sse-message-endpoint: /api/v1/mcp/
+        resource-change-notification: true
+        tool-change-notification: true
+        prompt-change-notification: true
+server:
+  port: 8080
+logging:
+  level:
+    io:
+      modelcontextprotocol: TRACE
+    org:
+      springframework:
+        ai:
+          mcp: TRACE
+        web:
+          client: TRACE
+    com:
+       jeltechnologies:
+         mcp: DEBUG
