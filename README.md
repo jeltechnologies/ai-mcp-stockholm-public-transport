@@ -16,7 +16,8 @@ The tool is targeted to people that self-host OpenWebUI and Ollama. Because MCP 
 For self-host solutions, such as homeservers:
 - Get a Linux box with Docker installed.
 - Clone the repository
-- Edit file file config.json in directory docker/mcpo-config. Change the IP address to the IP address of your Linux box.
+- Edit file file config.json in directory docker/mcpo-config. Change the IP address to the IP address of your Linux box.  
+```
 {
   "mcpServers": {
 	"stockholm-public-transport": {
@@ -25,12 +26,17 @@ For self-host solutions, such as homeservers:
     }
   }
 }
-- Start the containers with docker compose
+```
+- Start the containers with docker compose up
 - This will start a Spring application in Java as well as MCPO. MCPO is a proxy from MCP to OpenAI API.
 - Open OpenWebUI as administrator, click on the account, choose Admin Panel, Settings, External Tools
-- Connect using the settings as shown in the screenshot.
-
+- Click "Add Connection" 
+- Use URL `http://<your-ip-here>:18108/stockholm-public-transport` and change the IP to the IP of the Linux box. 
+- Choose a name and description. A good name and description way purseude the AI bot to use the tool.
 ![editconnectionopenwebui](https://github.com/user-attachments/assets/a76e47c4-96bf-481e-9b4a-bfc6eb6d9f27)
+- Add the tool to models, so they are available in all chats.
+![addtomodel](https://github.com/user-attachments/assets/06a8390a-4fe2-4f8e-af5c-2f8767ef1bab)
+
 
 
 
