@@ -1,10 +1,10 @@
-# Let ChatGTP plan your next journey in Stockholm
+# Ask AI "When is the next train from Sollentuna to Upplands Väsby?"
 
 ![slbus](https://github.com/user-attachments/assets/57b41e62-1d7e-4e85-b015-645b8150ebcb)
 (image by by AleWi - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=131932539)
 
 ## Why would I need this?
-Enables to use AI chats with questions like "when is the next train from Sollentuna to Upplands Väsby?"
+Use AI chats with questions like "when is the next train from Sollentuna to Upplands Väsby?". 
 
 ## What do I need to get started?
 The tool is targeted to people that self-host OpenWebUI and Ollama. Because MCP is an open standard, it may also work with other AI tools like Claude or even ChatGTP.
