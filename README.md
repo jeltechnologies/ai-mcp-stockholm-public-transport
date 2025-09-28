@@ -42,8 +42,7 @@ Developing an Model Context Protocol server requires a similar approach: forget 
 The Model Context Protocol has the potential to revolutionize agentic AI by focusing on usability for chatbots. But we must focus on the needs of the bot when we design Model Context Protocol servers. This goes against the nature of most software engineers. We are used to deterministic systems, where things are testable because they always behave the same. This approach has lead to high quality of horrible user interfaces, that pass all automatic tests. many horrible user interfaces. But with the user need as afterthough, many user interfaces are useless, in practical reality. We must now fall in the same trap with AI bots. Chatbots act randomly "how they feel for it" on what they ask for, but also on how what they process the information. Almost like humans!  
 
 # Enough ranting already, let's get started!
-This GitHub repository contains the tool, that can be deployed on your self-hosted server, for example in the cloud or on a homeserver. 
-All you need a Linux box with Docker.
+All you need a Linux box with Docker, for example in the cloud or on a homeserver. 
 
 ## Installation instructions
 - Get a Linux box with Docker installed.
