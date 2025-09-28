@@ -1,7 +1,7 @@
 # Ask AI "When is the next train from Sollentuna to Upplands Väsby?"
+![slbus](https://github.com/user-attachments/assets/31bac689-3e99-4fc9-bab9-74e4d3bab13e)
 
-![slbus](https://github.com/user-attachments/assets/57b41e62-1d7e-4e85-b015-645b8150ebcb)
-(image by by AleWi - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=131932539)
+<sup>*Image by by AleWi - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=131932539*</sup>
 
 ## Why would I need this?
 Use AI chats with questions like "when is the next train from Sollentuna to Upplands Väsby?". 
