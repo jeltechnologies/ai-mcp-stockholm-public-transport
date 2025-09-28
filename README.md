@@ -7,7 +7,7 @@
 ![chatting](https://github.com/user-attachments/assets/0bc9a190-0b1a-4e2e-adba-00db1e2ff092)
 
 # About this tool
-The tool provides AI agents access to real. time Stockholms public transport data. 
+The tool provides AI agents access to real-time Stockholms public transport data. 
 The tool gets it data from SL, the Stockholm public transport company. 
 
 Functions:
