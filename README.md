@@ -6,11 +6,11 @@
 ## Why would I need this?
 Enables to use AI chats with questions like "when is the next train from Sollentuna to Upplands Väsby?"
 
-## How does it work?
-This tool connects to SL, the Stockholm public transport company, and uses their APIs in real-time, providing a simplified interface for AI chatbots to access transport information. It acts as an Model Context Protocol (MCP) server, exposing the SL API's functionality.
-
 ## What do I need to get started?
 The tool is targeted to people that self-host OpenWebUI and Ollama. Because MCP is an open standard, it may also work with other AI tools like Claude or even ChatGTP.
+
+## How does it work?
+This tool connects to SL, the Stockholm public transport company, and uses their APIs in real-time. The tool provides a simplified interface for AI chatbots to access transport information. It acts as an Model Context Protocol (MCP) server, exposing the SL API's functionality.
 
 ## Installation
 For self-host solutions, such as homeservers:
