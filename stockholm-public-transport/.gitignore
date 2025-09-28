@@ -8,7 +8,7 @@ target/
 .apt_generated
 .classpath
 .factorypath
-.project
+# .project " store eclopse files
 .settings
 .springBeans
 .sts4-cache
