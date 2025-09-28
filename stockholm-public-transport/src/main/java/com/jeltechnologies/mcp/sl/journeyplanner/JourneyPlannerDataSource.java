@@ -100,7 +100,8 @@ public class JourneyPlannerDataSource {
                                 }
                                 String destination = leg.transportation().destination().name();
                                 String line = StringUtils.firstCharToUpperCase(transportation);
-                                TripLeg tripLeg = new TripLeg(line, destination, fromName, fromTime, toName, toTime, duration, stops.size());
+                                int nrOfStops = stops.size() - 1;
+                                TripLeg tripLeg = new TripLeg(line, destination, fromName, fromTime, toName, toTime, duration, nrOfStops);
                                 tripLegs.add(tripLeg);
                             }
                         }

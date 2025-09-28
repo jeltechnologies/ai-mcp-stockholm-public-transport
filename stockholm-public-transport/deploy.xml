@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="stockholm-public-transport" default="deploy" basedir=".">
 
-	<property name="webapp-name" value="stockholm-public-transport" />
+	<property name="app-name" value="stockholm-public-transport" />
 	<property name="version" value="0.0.1-SNAPSHOT" />
 
 	<property name="build" value="./target" />
@@ -13,7 +13,7 @@
 	</target>
 
 	<target name="deploy" depends="mvn">
-		<copy file="${build}/${webapp-name}-${version}.jar" tofile="Y:\stockholm-public-transport\${webapp-name}.jar" />
+		<copy file="${build}/${app-name}-${version}.jar" tofile="X:\${app-name}.jar" />
 	</target>
 
 </project>

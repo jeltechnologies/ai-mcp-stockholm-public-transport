@@ -21,10 +21,10 @@ public class TransportTimesApplication {
     @Autowired
     private JourneyPlannerDataSource journeyPlannerDataSource;
 
-    @Bean
-    ToolCallbackProvider nextDepartureService() {
-        return MethodToolCallbackProvider.builder().toolObjects(new NextDeparturesMCPController(nextDepartureDataSource)).build();
-    }
+//    @Bean
+//    ToolCallbackProvider nextDepartureService() {
+//        return MethodToolCallbackProvider.builder().toolObjects(new NextDeparturesMCPController(nextDepartureDataSource)).build();
+//    }
 
     @Bean
     ToolCallbackProvider journeyPlannerService() {
