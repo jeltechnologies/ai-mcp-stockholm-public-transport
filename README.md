@@ -39,12 +39,10 @@ The solution lies in traditional usability design principles:
 Developing an Model Context Protocol server requires a similar approach: forget about available data; design the Model Context Protocol server for the chatbot as if it were human. What tasks does it need to perform? Can we make it easier? Passing too much data, wrongly formatted, or not enough data increases risks that chatbots "break data" by hallucination. Tweaking that will take most time. 
 
 ### My vision on MCP going forward 
-The Model Context Protocol has the potential to revolutionize agentic AI by focusing on usability for chatbots. But we must focus on the needs of the bot when we design Model Context Protocol servers. This goes against the nature of most software engineers. We are used to deterministic systems, where things are testable because they always behave the system. This approach has lead to many horrible user interfaces. These user interfaces pass all their automatic tests with ease, but will be useless in practical reality. 
+The Model Context Protocol has the potential to revolutionize agentic AI by focusing on usability for chatbots. But we must focus on the needs of the bot when we design Model Context Protocol servers. This goes against the nature of most software engineers. We are used to deterministic systems, where things are testable because they always behave the same. This approach has lead to high quality of horrible user interfaces, that pass all automatic tests. many horrible user interfaces. But with the user need as afterthough, many user interfaces are useless, in practical reality. We must now fall in the same trap with AI bots. Chatbots act randomly "how they feel for it" on what they ask for, but also on how what they process the information. Almost like humans!  
 
-Chatbots act randomly "how they feel for it" on what they ask for, but also on how they process the information. Almost like humans!  
-
-# Enough ranting already, how to get started!
-The tool is deployed on your self-hosted server, for example in the cloud or on a homeserver. 
+# Enough ranting already, let's get started!
+This GitHub repository contains the tool, that can be deployed on your self-hosted server, for example in the cloud or on a homeserver. 
 All you need a Linux box with Docker.
 
 ## Installation instructions
