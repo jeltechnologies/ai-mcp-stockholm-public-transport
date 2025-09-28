@@ -19,16 +19,16 @@ Functions:
 The Model Context Protocol (MCP) is a crucial enabler for agentic AI, often referred to as the "USB-C port" for AI applications. With MCP, AI applications like Claude or ChatGPT can access key information and perform tasks. I created this tool to understand how MCP works, its possibilities, and limitations. 
 
 ## My learnings 
-Getting started with MCP in modern frameworks like Spring is incredibly easy. It's a "plug-and-play" solution that works out of the box. 
-However, there are fundamental difficulties associated with MCP. The non-deterministic behavior of chatbots and the need to tailor the API for the chatbot, not the system, can be challenging. 
+Getting started with the Model Context Protocol in modern frameworks like Spring is incredibly easy. It's a "plug-and-play" solution that works out of the box. 
+However, there are fundamental difficulties associated with the Model Context Protocol. The non-deterministic behavior of chatbots and the need to tailor the API for the chatbot, not the system, can be challenging. 
 
 ### AI acts like a cat, while REST APIs are for dogs 
-In traditional APIs, clients perform the same requests and use responses in the same way, behaving in a binary manner. However, chatbots act more like cats - unpredictable and prone to random behavior. To effectively use MCP, you need to persuade chatbots to use the tool with clear descriptions, but even then, there's no guarantee how they'll process information. 
+In traditional APIs, clients perform the same requests and use responses in the same way, behaving in a binary manner. However, chatbots act more like cats - unpredictable and prone to random behavior. You need to persuade chatbots to use the tool with clear descriptions, but even then, there's no guarantee how they'll process information. 
 
 ### User versus system view 
 I've noticed similarities between the challenges faced in industrial software engineering, particularly in telecommunications. Software engineers often have a "system view," understanding the system from inside out and wanting to maintain maximum flexibility. This can lead to overly complex configuration files with many parameters. REST APIs tend to have this problem as well. The system view is great for machines, but people get drowned in information.
 
-On the other hand, normal users have a "user view" - they just want to perform tasks efficiently. A plethora of options can overwhelm them, making it difficult for them to configure systems without breaking them. 
+Users have a "user view" - they just want to perform tasks efficiently. A plethora of options can overwhelm them, making it difficult for them to configure systems without breaking them. 
 The solution lies in traditional usability design principles: 
 1.	Understand the tasks that users need to perform.
 2.	Collect only the data needed for those tasks (ignore the system-level configuration in this phase).
@@ -36,10 +36,10 @@ The solution lies in traditional usability design principles:
 4.	Review with users before coding and transforming user-view into system-view by applying default configurations.
 5.	And finally, use the latest Javascript fanciest framework to code your app. Or use JQuery, users won't care.
 
-Developing an MCP server and API requires a similar approach: forget about available data; design the MCP API for the chatbot as if it were human. What tasks does it need to perform? Can we make it easier? 
+Developing an Model Context Protocol server requires a similar approach: forget about available data; design the Model Context Protocol server for the chatbot as if it were human. What tasks does it need to perform? Can we make it easier? Passing too much data, wrongly formatted, or not enough data increases risks that chatbots "break data" by hallucination. Tweaking that will take most time. 
 
 ### My vision on MCP going forward 
-MCP has the potential to revolutionize agentic AI by focusing on usability for chatbots. But we must focus on the needs of the bot when we design MPP. This goes against the nature of most software engineers. We are used to deterministic systems, where things are testable because they always behave the system. This approach has lead to many horrible user interfaces. These user interfaces pass all their automatic tests with ease, but will be useless in practical reality. 
+The Model Context Protocol has the potential to revolutionize agentic AI by focusing on usability for chatbots. But we must focus on the needs of the bot when we design Model Context Protocol servers. This goes against the nature of most software engineers. We are used to deterministic systems, where things are testable because they always behave the system. This approach has lead to many horrible user interfaces. These user interfaces pass all their automatic tests with ease, but will be useless in practical reality. 
 
 Chatbots act randomly "how they feel for it" on what they ask for, but also on how they process the information. Almost like humans!  
 
@@ -62,7 +62,7 @@ All you need a Linux box with Docker.
 }
 ```
 - Start the containers by executing the command `docker compose up`
-- This will start a Spring application in Java as well as MCPO. MCPO is a proxy from MCP to OpenAI API.
+- This will start a Spring application in Java as well as MCPO proxy. MCPO is a proxy from MCP to OpenAI API.
 - Keep the docker running in the background to observe the logs.
 - Optionally, you can also start the container with
   - `docker compose up -d` and then
