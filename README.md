@@ -35,9 +35,8 @@ The solution lies in traditional usability design principles:
 3.	Simplify screens and layouts to minimize clicks, scrolling, and data entry.
 4.	Review with users before coding and transforming user-view into system-view by applying default configurations.
 5.	And finally, use the latest Javascript fanciest framework to code your app. Or use JQuery, users won't care.
-Developing an MCP server and API requires a similar approach: forget about available data; design the MCP API for the chatbot as if it were human. What tasks does it need to perform? Can we make it easier? 
 
-Bot-focus, and simplifying data, rather than trying to accommodate every possible scenario, is key to building effective MCP APIs. 
+Developing an MCP server and API requires a similar approach: forget about available data; design the MCP API for the chatbot as if it were human. What tasks does it need to perform? Can we make it easier? 
 
 ### My vision on MCP going forward 
 MCP has the potential to revolutionize agentic AI by focusing on usability for chatbots. But we must focus on the needs of the bot when we design MPP. This goes against the nature of most software engineers. We are used to deterministic systems, where things are testable because they always behave the system. This approach has lead to many horrible user interfaces. These user interfaces pass all their automatic tests with ease, but will be useless in practical reality. 
