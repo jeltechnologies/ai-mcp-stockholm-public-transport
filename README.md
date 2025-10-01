@@ -30,25 +30,19 @@ Tailoring the server for AI bots takes most times, because of the fundamental di
 ### The need for usability - for bots
 In traditional APIs, clients perform the same requests and use responses in the same way, simular to dogs. AI chatbots act more like cats - unpredictable and prone to random behavior. You need to persuade chatbots to use the tool with clear descriptions, but even then, there's no guarantee how they'll process information. 
 
-While working with the AI bots, I've noticed similarities to usability in industrial software engineering, particularly in telecommunications. Engineers see the system from the inside out. Without guidance they often like to expose all options to to maintain maximum flexibility. This can lead to overly complex configuration files with many parameters. REST APIs tend to have this problem as well. And this reflects also in the SL REST interface. This is great for machines, but users get drowned in information. Users just want to perform tasks efficiently. A plethora of options can overwhelm them, making it difficult for them to configure systems without breaking them. 
+While working with the AI bots, I've noticed similarities to user interface development in industrial software engineering. Developing human interfaces without usability has lead to high quality of horrible user interfaces. These are high quality, because thet pass all automatic tests, but with a horrible user experience, making them useless. This happens because engineers see the system from the inside out, they know how it works. Without guidance, engineers tend to expose all available options in their user interfaces, to to maintain maximum flexibility. This approach leads to complex configuration user interface with many confuzing options parameters. We must not fall in the same trap when developing interfaces for AI bots. 
 
-The solution lies in traditional usability design principles: 
-1.	Understand the tasks that users need to perform.
-2.	Collect only the data needed for those tasks (ignore the system-level configuration in this phase).
-3.	Simplify screens and layouts to minimize clicks, scrolling, and data entry.
-4.	Review with users before coding and transforming user-view into system-view by applying default configurations.
-5.	And finally, code the screens in a Javascript framework of choice.
+Users and AI bots just want to perform tasks efficiently. A plethora of options can overwhelm them, making it difficult for them to correlate without halicunations. 
 
-Developing an Model Context Protocol server requires a similar approach: forget about available data; design the Model Context Protocol server for the chatbot as if it were human. This means understanding things like, what tasks does it need to perform? Can we make it easier? Passing too much data, wrongly formatted, or not enough data increases risks that chatbots "break data" by hallucination. 
+The solution lies in traditional usability design principles:
+1.	Understand the tasks that bot need to perform.
+2.	Collect only the data needed for these tasks. Ignore the system-level configuration in this phase. 
+3.	Simplify the responses to make them easy understand and correlate, use natural language instead where possible.
+4.	Strip out al data the bots do not need for their task.
 
-Tweaking that will take most time. 
+The key is to build the Model Context Protocol server for the chatbot, as if it were human. 
 
-### My vision on MCP going forward 
-The Model Context Protocol has the potential to revolutionize agentic AI, and for it to work we need to focus on the needs of the AI bots. This goes against the nature of most software engineers. We are used to deterministic systems, where things are testable because they always behave the same. 
-
-Developing human interfaces without usability has lead to high quality of horrible user interfaces. These are high quality, because thet pass all automatic tests. many horrible user interfaces. But with the user need as afterthought, much of these user interfaces are useless, in practical reality. We must now fall in the same trap with AI bots. 
-
-Chatbots act human-like randomly "how they feel for it / what is fashionable / what correlates". Almost like humans!  
+Tweaking this will take most time, like usability takes most time at successful user interface development
 
 # Enough ranting already, let's get started!
 To get this project running you will need a Linux box with Docker, for example in the cloud or on a homeserver. 
