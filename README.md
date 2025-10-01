@@ -28,7 +28,7 @@ Tailoring the server for AI bots takes most times, because of the fundamental di
 - The non-deterministic behavior of chatbots
 
 ### AI acts like a cat, while REST APIs are for dogs 
-In traditional APIs, clients perform the same requests and use responses in the same way, behaving in a binary manner. AI chatbots act more like cats - unpredictable and prone to random behavior. You need to persuade chatbots to use the tool with clear descriptions, but even then, there's no guarantee how they'll process information. 
+In traditional APIs, clients perform the same requests and use responses in the same way. AI chatbots act more like cats - unpredictable and prone to random behavior. You need to persuade chatbots to use the tool with clear descriptions, but even then, there's no guarantee how they'll process information. 
 
 While working with the AI bots, I've noticed similarities to usability in industrial software engineering, particularly in telecommunications. Engineers see the system from the inside out. Without guidance they often like to expose all options to to maintain maximum flexibility. This can lead to overly complex configuration files with many parameters. REST APIs tend to have this problem as well. And this reflects also in the SL REST interface. This is great for machines, but users get drowned in information. Users just want to perform tasks efficiently. A plethora of options can overwhelm them, making it difficult for them to configure systems without breaking them. 
 
@@ -44,9 +44,11 @@ Developing an Model Context Protocol server requires a similar approach: forget 
 Tweaking that will take most time. 
 
 ### My vision on MCP going forward 
-The Model Context Protocol has the potential to revolutionize agentic AI by focusing on usability for chatbots. But we must focus on the needs of the bot when we design Model Context Protocol servers. This goes against the nature of most software engineers. We are used to deterministic systems, where things are testable because they always behave the same. 
+The Model Context Protocol has the potential to revolutionize agentic AI, and for it to work we need to focus on the needs of the AI bots. This goes against the nature of most software engineers. We are used to deterministic systems, where things are testable because they always behave the same. 
 
-Developing human interfaces without usability has lead to high quality of horrible user interfaces. These are high quality, because thet pass all automatic tests. many horrible user interfaces. But with the user need as afterthough, much of these user interfaces are useless, in practical reality. We must now fall in the same trap with AI bots. Chatbots act human-like randomly "how they feel for it, what is fashionable / what correlates". Almost like humans!  
+Developing human interfaces without usability has lead to high quality of horrible user interfaces. These are high quality, because thet pass all automatic tests. many horrible user interfaces. But with the user need as afterthought, much of these user interfaces are useless, in practical reality. We must now fall in the same trap with AI bots. 
+
+Chatbots act human-like randomly "how they feel for it / what is fashionable / what correlates". Almost like humans!  
 
 # Enough ranting already, let's get started!
 To get this project running you will need a Linux box with Docker, for example in the cloud or on a homeserver. 
