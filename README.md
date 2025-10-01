@@ -3,7 +3,7 @@
 
 <sup>*Image by by AleWi - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=131932539*</sup>
 
-## Ansers by the AI bot 
+## Answers by the AI bot 
 ![chatting](https://github.com/user-attachments/assets/0bc9a190-0b1a-4e2e-adba-00db1e2ff092)
 <sup>*AI chatbot in Open Web UI*</sup> 
 
