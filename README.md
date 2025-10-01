@@ -13,7 +13,7 @@ The tool provides AI agents access to real-time Stockholms public transport data
 The tool gets its data from SL, the Stockholm public transport company. 
 
 Functions:
-- Translation of REST data model interface, to a format that AI chatbots understand.
+- Translation of SL's data model, to a format that AI chatbots understand.
 - Exposure of the API as Model Context Protocol (MCP) server.
 - Support for Open WebUI, with the preconfigured MCPO proxy from Open WebU (https://github.com/open-webui/mcpo)
 
