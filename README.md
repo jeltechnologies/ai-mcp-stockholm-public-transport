@@ -23,11 +23,9 @@ The Model Context Protocol (MCP) is a crucial enabler for agentic AI, often refe
 ## My learnings 
 Getting started with the Model Context Protocol in modern frameworks like Spring is incredibly easy. It's a "plug-and-play" solution that works out of the box. 
 
-Tailoring the server for AI bots takes most times, because of the fundamental difficulties associated with the Model Context Protocol, like
-- he need to tailor the API for the chatbot 
-- The non-deterministic behavior of chatbots
+Tailoring the server for AI bots takes most times, to manage the non-deterministic behavior of chatbots.
 
-### The need for usability - for bots
+### The need for bot-usability
 In traditional APIs, clients perform the same requests and use responses in the same way, simular to dogs. AI chatbots act more like cats - unpredictable and prone to random behavior. You need to persuade chatbots to use the tool with clear descriptions, but even then, there's no guarantee how they'll process information. 
 
 While working with the AI bots, I've noticed similarities to user interface development in industrial software engineering. Developing human interfaces without usability has lead to high quality of horrible user interfaces. These are high quality, because thet pass all automatic tests, but with a horrible user experience, making them useless. This happens because engineers see the system from the inside out, they know how it works. Without guidance, engineers tend to expose all available options in their user interfaces, to to maintain maximum flexibility. This approach leads to complex configuration user interface with many confuzing options parameters. We must not fall in the same trap when developing interfaces for AI bots. 
