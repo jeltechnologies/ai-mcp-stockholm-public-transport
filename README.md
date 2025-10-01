@@ -5,6 +5,7 @@
 
 ## Ansers by the AI bot 
 ![chatting](https://github.com/user-attachments/assets/0bc9a190-0b1a-4e2e-adba-00db1e2ff092)
+<sup>AI chatbot in Open Web UI</sup> 
 
 # About this tool
 The tool provides AI agents access to real-time Stockholms public transport data. 
@@ -14,7 +15,7 @@ The tool gets its data from SL, the Stockholm public transport company.
 Functions:
 - Translation of REST data model interface, to a format that AI chatbots understand.
 - Exposure of the API as Model Context Protocol (MCP) server.
-- Support for open WebUI, with the preconfigured MCPO proxy from Open WebU (https://github.com/open-webui/mcpo)
+- Support for Open WebUI, with the preconfigured MCPO proxy from Open WebU (https://github.com/open-webui/mcpo)
 
 # Why this tool? 
 The Model Context Protocol (MCP) is a crucial enabler for agentic AI, often referred to as the "USB-C port" for AI applications. With MCP, AI applications like Claude or ChatGPT can access key information and perform tasks.  I created this tool to understand how MCP works, its possibilities, and limitations.
