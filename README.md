@@ -1,21 +1,22 @@
 # Ask ChatGTP "What is the next bus?"
 ![slbus](https://github.com/user-attachments/assets/31bac689-3e99-4fc9-bab9-74e4d3bab13e)
 
-<sup>*Image by by AleWi - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=131932539*</sup>
+<sup>*Image by by [AleWi - Own work, CC BY-SA 4.0](https://commons.wikimedia.org/w/index.php?curid=131932539)*</sup>
 
 ## Answers by the AI bot 
 ![chatting](https://github.com/user-attachments/assets/0bc9a190-0b1a-4e2e-adba-00db1e2ff092)
-<sup>*AI chatbot in Open Web UI*</sup> 
+<sup>*AI chatbot in [Open Web UI](https://openwebui.com/)*</sup> 
 
 # About this tool
 The tool provides AI agents access to real-time Stockholms public transport data. 
 
-The tool gets its data from SL, the Stockholm public transport company. 
+The tool gets its data from [SL](https://sl.se/), the Stockholm public transport company. 
 
 Functions:
 - Translation of SL's data model, to a format that AI chatbots understand, basically by simplifying data to essential information.
 - Supporting this as Model Context Protocol (MCP) server.
-- Support for Open WebUI, with the preconfigured MCPO proxy from Open WebU (https://github.com/open-webui/mcpo)
+- Support for [Open WebUI](https://openwebui.com/), with preconfigured [MCPO proxy](https://github.com/open-webui/mcpo).
+- Deployment with Docker Compose
 
 # Why this tool? 
 The Model Context Protocol (MCP) is a crucial enabler for agentic AI, often referred to as the "USB-C port" for AI applications. With MCP, AI applications like Claude or ChatGPT can access key information and perform tasks.  I created this tool to understand how MCP works, its possibilities, and limitations.
@@ -74,11 +75,14 @@ MCP is an open standard, the tool thefore works with Open WebUI, and may also wo
 #### Configuration of OpenWebUI 
 - Open OpenWebUI as administrator, click on the account, choose Admin Panel, Settings, External Tools
 - Click "Add Connection" 
-- Use URL `http://<your-ip-here>:18108/stockholm-public-transport` and change the IP to the IP of the Linux box. 
-- Choose a name and description. A good name and description way purseude the AI bot to use the tool.
-![editconnectionopenwebui](https://github.com/user-attachments/assets/a76e47c4-96bf-481e-9b4a-bfc6eb6d9f27)
-- Add the tool to models, so they are available in all chats.
-![addtomodel](https://github.com/user-attachments/assets/06a8390a-4fe2-4f8e-af5c-2f8767ef1bab)
+- Use URL `http://<your-ip-here>:18108/stockholm-public-transport` and change the IP to the IP of the Linux box.
+- Choose a name and description. 
+![editconnectionopenwebui](https://github.com/user-attachments/assets/a85cb55c-c5d8-4052-bb20-a68123f6ee42)
+
+- Add the tool to models, to make it available in all chats.
+![addtomodel](https://github.com/user-attachments/assets/ed1699f3-2e7f-4c1e-b5dd-0ee5c1fb1c8e)
+
+
 
 
 
