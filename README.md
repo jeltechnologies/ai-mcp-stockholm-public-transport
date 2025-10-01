@@ -27,8 +27,8 @@ Tailoring the server for AI bots takes most times, because of the fundamental di
 - he need to tailor the API for the chatbot 
 - The non-deterministic behavior of chatbots
 
-### AI acts like a cat, while REST APIs are for dogs 
-In traditional APIs, clients perform the same requests and use responses in the same way. AI chatbots act more like cats - unpredictable and prone to random behavior. You need to persuade chatbots to use the tool with clear descriptions, but even then, there's no guarantee how they'll process information. 
+### The need for usability - for bots
+In traditional APIs, clients perform the same requests and use responses in the same way, simular to dogs. AI chatbots act more like cats - unpredictable and prone to random behavior. You need to persuade chatbots to use the tool with clear descriptions, but even then, there's no guarantee how they'll process information. 
 
 While working with the AI bots, I've noticed similarities to usability in industrial software engineering, particularly in telecommunications. Engineers see the system from the inside out. Without guidance they often like to expose all options to to maintain maximum flexibility. This can lead to overly complex configuration files with many parameters. REST APIs tend to have this problem as well. And this reflects also in the SL REST interface. This is great for machines, but users get drowned in information. Users just want to perform tasks efficiently. A plethora of options can overwhelm them, making it difficult for them to configure systems without breaking them. 
 
