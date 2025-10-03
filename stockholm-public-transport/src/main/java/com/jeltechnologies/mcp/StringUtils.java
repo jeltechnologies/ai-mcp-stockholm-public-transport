@@ -2,7 +2,6 @@ package com.jeltechnologies.mcp;
 
 import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,26 +18,16 @@ public class StringUtils {
         return result;
     }
     
-
-    public static String toString(LocalDateTime ldt) {
-        String result;
-        if (ldt == null) {
-            result = "";
-        } else {
-            result = ldt.format(DateTimeFormatter.ISO_DATE_TIME);
-        }
-        return result;
+    public static String timeRoundedToMinutes(LocalDateTime time) {
+        return timeRoundedToMinutes(time.getHour(), time.getMinute(), time.getSecond());
     }
     
-    public static String getTime(ZonedDateTime dateTime) {
-        return dateTime.format(DateTimeFormatter.ISO_LOCAL_TIME);
+    public static String timeRoundedToMinutes(ZonedDateTime time) {
+        return timeRoundedToMinutes(time.getHour(), time.getMinute(), time.getSecond());
     }
     
-    public static String localTimeRoundedToMinutes(ZonedDateTime time) {
+    public static String timeRoundedToMinutes(int hour, int minute, int second) {
         StringBuilder b = new StringBuilder();
-        int hour = time.getHour();
-        int minute = time.getMinute();
-        int second = time.getSecond();
         int roundedMinute = minute;
         if (second > 29) {
             roundedMinute++;
@@ -54,6 +43,7 @@ public class StringUtils {
         b.append(roundedMinute);
         return b.toString();
     }
+    
 
     public static String durationDescriptionRoundedToMinutes(int totalSeconds) {
         int hours = totalSeconds / 3600;

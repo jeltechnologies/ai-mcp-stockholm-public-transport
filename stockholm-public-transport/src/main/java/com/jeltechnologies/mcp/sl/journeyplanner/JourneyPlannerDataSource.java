@@ -82,8 +82,8 @@ public class JourneyPlannerDataSource {
                         ZonedDateTime receivedToTime = ZonedDateTime.parse(leg.destination().arrivalTimeEstimated());
                         ZonedDateTime localTimeFrom = receivedFromTime.withZoneSameInstant(STOCKHOLM);
                         ZonedDateTime localTimeTo = receivedToTime.withZoneSameInstant(STOCKHOLM);
-                        String fromTime = StringUtils.localTimeRoundedToMinutes(localTimeFrom);
-                        String toTime = StringUtils.localTimeRoundedToMinutes(localTimeTo);
+                        String fromTime = StringUtils.timeRoundedToMinutes(localTimeFrom);
+                        String toTime = StringUtils.timeRoundedToMinutes(localTimeTo);
                         int durationInSeconds = (int) Duration.between(receivedFromTime, receivedToTime).toSeconds();
                         String duration = StringUtils.durationDescriptionRoundedToMinutes(durationInSeconds);
 

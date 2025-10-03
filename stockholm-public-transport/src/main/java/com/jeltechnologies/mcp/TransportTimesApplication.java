@@ -7,23 +7,21 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import com.jeltechnologies.mcp.sl.departures.NextDepartureDataSource;
-import com.jeltechnologies.mcp.sl.departures.NextDeparturesMCPController;
 import com.jeltechnologies.mcp.sl.journeyplanner.JourneyPlannerDataSource;
 import com.jeltechnologies.mcp.sl.journeyplanner.JourneyPlannerMCPController;
 
 @SpringBootApplication
 public class TransportTimesApplication {
 
-    @Autowired
-    private NextDepartureDataSource nextDepartureDataSource;
+//    @Autowired
+//    private NextDeparturesDataSource nextDeparturesDataSource;
 
     @Autowired
     private JourneyPlannerDataSource journeyPlannerDataSource;
 
 //    @Bean
 //    ToolCallbackProvider nextDepartureService() {
-//        return MethodToolCallbackProvider.builder().toolObjects(new NextDeparturesMCPController(nextDepartureDataSource)).build();
+//        return MethodToolCallbackProvider.builder().toolObjects(new NextDeparturesMCPController(nextDeparturesDataSource)).build();
 //    }
 
     @Bean
