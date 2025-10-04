@@ -58,8 +58,9 @@ public class NextDeparturesDataSource {
                 String display = departure.display();
                 records.add(new DepartureRecord(time, lineName, departure.destination(), display));
             }
+            
         } else {
-            stationName = "A station or bus stop, with the name " + from + ", could no be found";
+            stationName = "A station or bus stop, with the name " + from + ", could not be found";
         }
         NextDeparturesAnswer answer= new NextDeparturesAnswer(stationName, records);
         LOGGER.debug("Result: " + answer.toString());

@@ -16,7 +16,7 @@ spring:
         tool-change-notification: true
         prompt-change-notification: true
 server:
-  port: 8081
+  port: 18107
 logging:
   level:
     io:

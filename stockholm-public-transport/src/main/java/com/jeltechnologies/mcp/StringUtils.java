@@ -33,7 +33,7 @@ public class StringUtils {
             roundedMinute++;
         }
         if (hour < 10) {
-            b.append(" ");
+            b.append("0");
         }
         b.append(hour);
         b.append(":");
