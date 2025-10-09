@@ -1,5 +1,5 @@
 services:
-    java:
+    stockholm-public-transport-mcp:
         image: openjdk:25-jdk
         ports:
             - 18107:18107
@@ -8,10 +8,10 @@ services:
             - ./stockholm-public-transport.jar:/app/stockholm-public-transport.jar
         restart: unless-stopped
 
-    mcpo:
+    stockholm-public-transport-mcpo:
         build: ./mcpo
         depends_on:
-          - java
+          - stockholm-public-transport-mcp
         command: /bin/bash -c "sleep 5;uvx mcpo --config /app/config.json"
         ports:
             - 18108:8000
