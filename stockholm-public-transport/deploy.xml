@@ -13,7 +13,7 @@
 	</target>
 
 	<target name="deploy" depends="mvn">
-		<copy file="${build}/${app-name}-${version}.jar" tofile="Y:\git\stockholm-public-transport\${app-name}.jar" />
+		<copy file="${build}/${app-name}-${version}.jar" tofile="Y:\git\stockholm-public-transport\docker\${app-name}.jar" />
 	</target>
 
 </project>
